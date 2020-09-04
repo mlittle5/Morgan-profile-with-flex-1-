@@ -1,0 +1,61 @@
+main {
+
+}
+section {
+
+}
+
+.verticalLine {
+  border-left: thick solid #000000;
+}
+
+/* flexbox css */
+
+.group {
+display: flex;
+flex-direction: column;
+margin-bottom: 100px;
+/* background-color: blue; */
+}
+.group img {
+  width: 100%;
+  padding: 
+}
+.blue {
+  background-color: blue;
+}
+
+.item {
+flex: 1;
+margin: 10px
+}
+.item-double {
+  flex: 2
+}
+
+/* This is for large screens */
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Css for contact form area */
+
+form {
+  padding-right: 6px;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
