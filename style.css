@@ -1,9 +1,22 @@
-main {
+/* css for nav-bar */
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-section {
 
+li {
+  float: left;
 }
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+/* css for vertical line */
 
 .verticalLine {
   border-left: thick solid #000000;
@@ -17,10 +30,11 @@ flex-direction: column;
 margin-bottom: 100px;
 /* background-color: blue; */
 }
+
 .group img {
   width: 100%;
-  padding: 
 }
+
 .blue {
   background-color: blue;
 }
@@ -33,8 +47,30 @@ margin: 10px
   flex: 2
 }
 
-/* This is for large screens */
+/* cs for different sizes of screens */
+
+/* Large screen */
 @media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+/* Smartphone */
+@media all and (min-width: 300px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+}
+/* Ipad */
+@media all and (min-width: 600px) {
   section {
     padding: 0 10%;
   }
